@@ -29,8 +29,19 @@
         // })();
 
         //arrow function
-        const x = (a,b) => a*b+1;
-        document.getElementById("demo").innerHTML = x(5,8);
+        // const x = (a,b) => a*b+1;
+        // document.getElementById("demo").innerHTML = x(5,8);
+
+        //calling using this
+        const myObject = {
+            firstName: 'Ajit',
+            lastName : 'Mandal',
+            fullName : function(){
+                return this.firstName + " " + this.lastName;
+            }
+        }
+
+        document.getElementById("demo").innerHTML = myObject.fullName();
 
     </script>
     
