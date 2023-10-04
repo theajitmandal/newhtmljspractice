@@ -12,12 +12,16 @@
     <script>
         // var x = myFunction(2,3);
 
-        var x = function (a, b) {return a*b};
-        document.getElementById("demo").innerHTML = x(4,3);
+        // var x = function (a, b) {return a*b}; //is executable so ends with semicolon
+        // document.getElementById("demo").innerHTML = x(4,3); //is executable so ends with semicolon
 
         // function myFunction(a, b){
         //     return a*b;
-        // }
+        // } //is non-executable so doesnot ends with semicolon
+
+        //Caliing function using function constructor
+        var x = new Function("x", "y", "return x*y"); //this code is same like as in line number 15
+        document.getElementById("demo").innerHTML = x(6,5);
 
     </script>
     
