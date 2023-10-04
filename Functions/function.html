@@ -20,8 +20,17 @@
         // } //is non-executable so doesnot ends with semicolon
 
         //Caliing function using function constructor
-        var x = new Function("x", "y", "return x*y"); //this code is same like as in line number 15
-        document.getElementById("demo").innerHTML = x(6,5);
+        // var x = new Function("x", "y", "return x*y"); //this code is same like as in line number 15
+        // document.getElementById("demo").innerHTML = x(6,5);
+
+        //self invoking function
+        // (function (){
+        //     document.getElementById("demo").innerHTML = "I am called myself";
+        // })();
+
+        //arrow function
+        const x = (a,b) => a*b+1;
+        document.getElementById("demo").innerHTML = x(5,8);
 
     </script>
     
