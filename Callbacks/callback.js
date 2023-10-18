@@ -20,5 +20,7 @@ function myFunction() {
   d.getSeconds();
 }
 
+let a = 5;
 console.log("This is my new tutorial")
+console.log(`The value of a is ${a}`);
 
