@@ -20,3 +20,5 @@ function myFunction() {
   d.getSeconds();
 }
 
+console.log("This is my new tutorial")
+
