@@ -21,6 +21,9 @@ function myFunction() {
 }
 
 let a = 5;
-console.log("This is my new tutorial")
+console.log("This is my new tutorial");
 console.log(`The value of a is ${a}`);
+
+console.log("Hello Javascript");
+
 
